@@ -152,14 +152,14 @@
             // SendInfo
             // 
             this.SendInfo.Name = "SendInfo";
-            this.SendInfo.Size = new System.Drawing.Size(136, 22);
-            this.SendInfo.Text = "发送";
+            this.SendInfo.Size = new System.Drawing.Size(180, 22);
+            this.SendInfo.Text = "查看";
             this.SendInfo.Click += new System.EventHandler(this.SendInfo_Click);
             // 
             // AboutNote
             // 
             this.AboutNote.Name = "AboutNote";
-            this.AboutNote.Size = new System.Drawing.Size(136, 22);
+            this.AboutNote.Size = new System.Drawing.Size(180, 22);
             this.AboutNote.Text = "关于记事本";
             this.AboutNote.Click += new System.EventHandler(this.AboutNote_Click);
             // 

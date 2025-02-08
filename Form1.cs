@@ -33,25 +33,20 @@ namespace WindowsFormsAppNote
 
         private void Mainform_KeyDown(object sender, KeyEventArgs e)
         {
-
+            // 使用Keys.Oemplus表示加号
             if (e.Control && e.KeyCode == Keys.Oemplus)
             {
                 // 阻止默认行为
                 e.SuppressKeyPress = true;
-                // 使用Keys.Oemplus表示加号
-                // 增大字体
                 ZoomFontSize(true);
             }
 
             // 使用Keys.OemMinus表示减号
             if (e.Control && e.KeyCode == Keys.OemMinus)
             {
-                // 阻止默认行为
                 e.SuppressKeyPress = true;
-                //减少字体
                 ZoomFontSize(false);
             }
-
         }
 
         /// <summary>
@@ -193,9 +188,8 @@ namespace WindowsFormsAppNote
         /// <param name="e"></param>
         private void SendInfo_Click(object sender, EventArgs e)
         {
-            string url = "https://cn.bing.com/search?q=%E8%8E%B7%E5%8F%96%E6%9C%89%E5%85%B3+windows&%E4%B8%AD%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC%E7%9A%84%E5%B8%AE%E5%8A%A9&filters=guid:%224466414-zh-hans-dia%22%20lang:%22zh-hans%22&form=T00032&ocid=HelpPane-BingIA";
-            // 检查是否为Windows系统，以便选择合适的命令
-        
+            string url = "https://cn.bing.com/search?q=%E8%8E%B7%E5%8F%96%E6%9C%89%E5%85%B3+windows&%E4%B8%AD%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC%E7%9A%84%E5%B8%AE%E5%8A%A9&filters=guid:%224466414-zh-hans-dia%22%20lang:%22zh-hans%22&form=T00032&ocid=HelpPane-BingIA";  
+            // windows 系统打开url
             if (Environment.OSVersion.Platform == PlatformID.Win32NT)
             {
                 // 在Windows上使用Process.Start直接打开URL
@@ -220,9 +214,8 @@ namespace WindowsFormsAppNote
         {
 
             float newSize = bl ? (textBox.Font.Size + fontSizeIncrement) : (textBox.Font.Size - fontSizeIncrement);
-            // 最大字体
+            // 最大字体最小字体
             if (newSize <= 72 && newSize >= 8) { 
-            
                 textBox.Font = new Font(textBox.Font.FontFamily, newSize);  
             }
 

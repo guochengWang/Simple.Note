@@ -1,0 +1,4 @@
+D:\github\Simple.Note\obj\Debug\WindowsFormsAppNote.csproj.AssemblyReference.cache
+D:\github\Simple.Note\obj\Debug\WindowsFormsAppNote.AboutNote.resources
+D:\github\Simple.Note\obj\Debug\WindowsFormsAppNote.Form1.resources
+D:\github\Simple.Note\obj\Debug\WindowsFormsAppNote.csproj.GenerateResource.cache
